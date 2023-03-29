@@ -5,4 +5,7 @@
 
 >This starter code is just some simple faces being drawn. 
 
+30/03
+
+Played around with the code, picked my colour pallette and have start4ee drawing my face. Lots to come
 

@@ -10,6 +10,16 @@ let slider6, slider7, slider8, slider9, slider10;
 let faceSelector;
 let faceGuideCheckbox;
 
+const CanvasColour = [122,111, 98];
+
+// color ('#BAA995') // lightest dirty beige , or 186,169,149
+// color ('#7A6F62') // darker dirty beige, or 122,111, 98
+// color ('#2E2A25') // Musty dark brown, or 46,42,37
+// color ('#3B352F') // Faded dark brown. lighter then musty brown, or 59,53,47
+// color ('#332E29') // soft dark brown. or 51,46,41
+// color ('#FFFFFF') // White
+// color ('#000000') // Black
+
 function setup () {
 
   // create the drawing canvas, save the canvas element
@@ -46,7 +56,8 @@ function setup () {
   faceSelector.option('1');
   faceSelector.option('2');
   faceSelector.option('3');
-  faceSelector.value('1');
+  faceSelector.option('4');
+  faceSelector.value('4');
   faceSelector.parent('selector1Container');
 }
 
@@ -57,7 +68,7 @@ function draw () {
 
   let mode = faceSelector.value();
 
-  background(bg_color);
+  background(CanvasColour);
 
   let s1 = slider1.value();
   let s2 = slider2.value();
@@ -97,6 +108,9 @@ function draw () {
   }
   if (mode == '3') {
     simplePurpleFace();
+  }
+  if (mode == '4') {
+    AdamsVintageFellas();
   }
 
   pop();
