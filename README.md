@@ -9,3 +9,12 @@
 
 Played around with the code, picked my colour pallette and have start4ee drawing my face. Lots to come
 
+04/ 04
+
+Started off experimenting with creating a ‘base face’. I think my lines are too thick, but I’m happy with the style that I’ve settled on. I think I will have to keep in mind how little change I can have on the eyes as I feel it could easily depart from the theme I’m looking for. I also really like the ¾ facial view, it features only one ear and provides a different angle then the standard front on view. Could also provide some interesting styles for hair.
+
+I’ve settled on these brown and beige colours to create a vintage effect for the faces. This could change over time, but I don't think I will depart from the theme of brown and beige. I am also conscious of changing the face colour as i don’t want to only represent white people as that isn't ethical.
+
+I might also change how big the face is in regard to the bounding box as it does not exactly leave much room for hair or hats, and might also be a tight squeeze when trying to pair the faces next to each other. I think I’ll just have to experiment with this later on as I go. 
+
+

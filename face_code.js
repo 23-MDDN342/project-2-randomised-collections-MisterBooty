@@ -15,6 +15,8 @@
  */
 function AdamsVintageFellas(tilt_value, eye_value, mouth_value){
 
+  
+
   let LightBeige =  color ('#BAA995')
   let DarkBeige = color ('#7A6F62')
   let MustyBrown = color ('#2E2A25')
@@ -39,25 +41,49 @@ fill(DarkBeige_const)
 
  
 
-  strokeWeight(.5);
+  strokeWeight(.4);
   stroke(MustyBrown_const);
   fill(LightBeige_const);
   
   ellipse(0,0, 13, 19) // face
+
+  arc(-1,-3.1, 14, 13,2.566 ,5); // head top
+
+  arc(-6.6, 0, 3, 3, 1,5.5); // ear 
+
+  arc(3.1, 8.1, 5, 2.7, 5,3,OPEN); // chin right
+  arc(1.2, 9, 5, 2, 5,3, OPEN); // chin left
+  
   
   strokeWeight(1);
   stroke(MustyBrown_const);
   fill(MustyBrown_const);
   
-  ellipse(-3,-3, 2, 6) // left eye
+  ellipse(-1,-2, 1.5, 4) // left eye
 
-  ellipse(3,-3, 2, 6) // right eye
+  ellipse(3.5,-2, 1.5, 4) // right eye
 
+
+  noFill();
+  strokeWeight(.4);
+
+  arc(1.5, 3, 6, 9, 0, PI, PI + QUARTER_PI); // mouth bottom
+  arc(1.5, 3, 6, 1, 0, PI, PI + QUARTER_PI); // mouth top
+
+  arc(-2.7, 2, 3, 3, 0, HALF_PI); // left cheek outline
+  arc(2, 1, 2.5, 3, 5,3); // Nose
+
+  
+
+  fill(MustyBrown_const);
+
+  arc(1.5, 4, 5.6, 5, 0, PI, PI + QUARTER_PI); // mouth darkness
   noStroke();
 
   fill(LightBeige_const); 
-  triangle(-5,-4, -5,-1.5,-2,-2.5,) // left indent
-  triangle(1,-4, 1,-1.5,4,-2.5,) // left indent
+  triangle(-3.5,-3, -3.5,-.5,-0.5,-1.5,) // left eye indent
+  triangle(1,-3, 1,-0.5,4,-1.5,) // right eye indent
+
 
   
 
