@@ -110,7 +110,9 @@ function draw () {
     simplePurpleFace();
   }
   if (mode == '4') {
-    AdamsVintageFellas();
+    let mouthType = int(map(s2,0,100,1,4));
+    let eyeType = int(map(s1, 0, 100, 1, 3));
+    AdamsVintageFellas(eyeType, mouthType);
   }
 
   pop();

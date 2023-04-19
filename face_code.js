@@ -13,7 +13,7 @@
  * eye_value is an integer number of eyes: either 0, 1, 2, or 3
  * mouth_value is how open the mouth is and should generally range from 0.5 to 10
  */
-function AdamsVintageFellas(tilt_value, eye_value, mouth_value){
+function AdamsVintageFellas(eyeType, mouthType){
 
   
 
@@ -28,7 +28,9 @@ function AdamsVintageFellas(tilt_value, eye_value, mouth_value){
   const MustyBrown_const = [46,42,37];
   const FadeBrown_const = [59,53,47];
   const SoftBrown_const = [51,46,41];
-  
+
+  let faceX = width/73.84
+  let faceY = height/26.31
   // color ('#BAA995') // lightest dirty beige , or 186,169,149
   // color ('#7A6F62') // darker dirty beige, or 122,111, 98
   // color ('#2E2A25') // Musty dark brown, or 46,42,37
@@ -36,23 +38,24 @@ function AdamsVintageFellas(tilt_value, eye_value, mouth_value){
   // color ('#332E29') // soft dark brown. or 51,46,41
   // color ('#FFFFFF') // White
   // color ('#000000') // Black
+
+ 
 fill(DarkBeige_const)
   rect(-10,-10,20,20)
 
- 
 
   strokeWeight(.4);
   stroke(MustyBrown_const);
   fill(LightBeige_const);
   
-  ellipse(0,0, 13, 19) // face
+  ellipse(0,0, faceX, faceY) // face
 
   arc(-1,-3.1, 14, 13,2.566 ,5); // head top
 
   arc(-6.6, 0, 3, 3, 1,5.5); // ear 
 
-  arc(3.1, 8.1, 5, 2.7, 5,3,OPEN); // chin right
-  arc(1.2, 9, 5, 2, 5,3, OPEN); // chin left
+  // arc(3.1, 8.1, 5, 2.7, 5,3,OPEN); // chin right
+  // arc(1.2, 8.5, 5, 2, 5,3, OPEN); // chin left
   
   
   strokeWeight(1);
@@ -67,17 +70,14 @@ fill(DarkBeige_const)
   noFill();
   strokeWeight(.4);
 
-  arc(1.5, 3, 6, 9, 0, PI, PI + QUARTER_PI); // mouth bottom
-  arc(1.5, 3, 6, 1, 0, PI, PI + QUARTER_PI); // mouth top
-
-  arc(-2.7, 2, 3, 3, 0, HALF_PI); // left cheek outline
   arc(2, 1, 2.5, 3, 5,3); // Nose
 
+   /********MOUTH*********/
+  MOUTH(mouthType);
   
 
   fill(MustyBrown_const);
 
-  arc(1.5, 4, 5.6, 5, 0, PI, PI + QUARTER_PI); // mouth darkness
   noStroke();
 
   fill(LightBeige_const); 

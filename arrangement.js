@@ -45,36 +45,36 @@ function draw () {
   background(bg_color1);
   noStroke();
 
-  // draw a 7x4 grid of faces
-  let w = canvasWidth / 7;
-  let h = canvasHeight / 4;
-  for(let i=0; i<4; i++) {
-    for(let j=0; j<7; j++) {
-      let y = h/2 + h*i;
-      let x = w/2 + w*j;
-     
-        // center face
-        let eye_value = int(random(2,4));
-        let tilt_value = random(-45, 45);
-        let mouth_value = random(3,4);
-        let is_cyclops = random(0, 100);
 
-        if(is_cyclops < 10) {
-          eye_value = 1;
-          tilt_value = random(-5, 5);
-          mouth_value = random(0, 1.7);
-        }
+  /************start */
 
-        push();
-        translate(x, y);
-        scale(w/25, h/25);
-        
-        orangeAlienFace(tilt_value, eye_value, mouth_value);
-        pop();
+  let mouthType;
+
+  let randomMouth = random(1,4); // change this later please
+
+  if (randomMouth = 1){
+    mouthType = 1;
+  
+  } else if (randomMouth = 2){
+    mouthType = 2
+
+  } else if (randomMouth = 3){
+    mouthType = 3
+
+  } else if (randomMouth = 4){
+    mouthType = 4
+  }
+
+
+
+  let eyeType;
+
+  AdamsVintageFellas(mouthType,eyeType) ;
+
+  
       
     }
-  }
-}
+  /********finish */
 
 function keyTyped() {
   if (key == '!') {

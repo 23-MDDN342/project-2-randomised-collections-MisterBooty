@@ -17,4 +17,10 @@ I’ve settled on these brown and beige colours to create a vintage effect for t
 
 I might also change how big the face is in regard to the bounding box as it does not exactly leave much room for hair or hats, and might also be a tight squeeze when trying to pair the faces next to each other. I think I’ll just have to experiment with this later on as I go. 
 
+12/04
+
+changed the thickness of the lines, and I got rid of the chin as well. I’ve also started to created different types of mouths, and they physically change when using one of the sliders. (took me a while to figure that out). My next steps are to do this process for the ears, eyes, nose and perhaps hair/hats . I might have to scale down everything for the hair if i do decide to include it. 
+
+I quite like the idea of including little accessories or just things that add to a pose of the face, such as the music note. I’m wanting to develop these further. 
+I also want to think about including some sort of shadow to make the image pop, as it is rather plain.
 
