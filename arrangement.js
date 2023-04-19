@@ -48,6 +48,8 @@ function draw () {
 
   /************start */
 
+
+  /*MOUTH*****/
   let mouthType;
 
   let randomMouth = random(1,4); // change this later please
@@ -65,11 +67,48 @@ function draw () {
     mouthType = 4
   }
 
-
+/**EYES */
 
   let eyeType;
 
-  AdamsVintageFellas(mouthType,eyeType) ;
+
+  let randomEye = random(1,4); // change this later please
+
+  if (randomEye = 1){
+    eyeType = 1;
+  
+  } else if (randomEye = 2){
+    eyeType = 2
+
+  } else if (randomEye = 3){
+    eyeType = 3
+
+  } else if (randomEye = 4){
+    eyeType = 4
+  }
+
+  /**NOSE */
+  
+  let noseType;
+
+
+  let randomNose = random(1,4); // change this later please
+
+  if (randomNose = 1){
+    noseType = 1;
+  
+  } else if (randomNose = 2){
+    noseType = 2
+
+  } else if (randomNose = 3){
+    noseType = 3
+
+  } else if (randomNose = 4){
+    noseType = 4
+  }
+
+
+  AdamsVintageFellas(mouthType,eyeType, noseType) ;
 
   
       

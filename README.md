@@ -24,3 +24,10 @@ changed the thickness of the lines, and I got rid of the chin as well. I’ve al
 I quite like the idea of including little accessories or just things that add to a pose of the face, such as the music note. I’m wanting to develop these further. 
 I also want to think about including some sort of shadow to make the image pop, as it is rather plain.
 
+19/04
+
+
+So far, I’ve created four sets of nose, eyes and mouths. each of these work within the editor and sliders, providing me with a lot of combos already. I’ve changed my mind about include hats / hair, I think it would just be best focus on the facial features instead. However, another idea to do would be facial accessories, such as jewelery or facial hair and piercings. Having this as a weighted distribution would be cool, as it think it would look good if it was rarer.
+
+
+Following on from last week, I have now created 4 differents ets of eyes, noses and mouths. I made the decision to thicken up the stroke for the eyebrows to exaggerate their effect. I’m trying to be careful to not have the different types clash and not work, which proves a little difficult but is a good filter for my limitations.

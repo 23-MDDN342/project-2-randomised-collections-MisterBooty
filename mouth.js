@@ -49,38 +49,56 @@ function MOUTH(mouthType){
     else if (mouthType == 3){
 
         stroke(MustyBrown_const);
-        noFill();
+        fill(MustyBrown_const);
         strokeWeight(.4);
 
-        arc(-2.5,4,4,5,2.5,5) // left cheek line
-        fill(LightBeige_const); // fill to show lips / cheeks
-        arc(5,4,3,5,4.5,7) // left cheek line top
-        arc(3.15,5,7,7,6,1.62) // left cheek line bottom
-
-        fill(MustyBrown_const)
-        arc(1.2,4.1, 8,6, 6,3.5) // main mouth filler
-        arc(2.5,5.2,6 ,4.5, 5.5,3) // side mouth filler
-
-        noFill();
-        strokeWeight(.7);
-        arc(1.2, 3, 7, 1, 6.3,3.1); // mouth top
-        line(0,4,2,4) // filler line middle top
-        strokeWeight(.4);
-        line(-.5,6.85,2.2,7.45) // filler line bottom middle
-        strokeWeight(.8)
-        line(4.7,3,5.2,4.5) //filler line top right
-
-        strokeWeight(.4);
         fill(LightBeige_const);
-        arc(3, 7, 4,5,3.2,6) // tongue right half
-        arc(0.5, 6.8, 4,4.5,3.5,6.5) // tongue left half
+        arc(3.5,6.5,4,4,5.75,1.85) // right cheek
+        arc(-0.5,6.5,4,4,1.2,3.3) // left cheek
 
+        fill(MustyBrown_const);
 
+        ellipse(1.5,5.5,5.5,3) //mouth dark
 
+        arc(0,6,3,3,0.5,5) // left mouth dark
 
-     
+        arc(3,6,3,3,5,3) // right mouth dark
+
+        
+
+       
     
     }
+else if (mouthType == 4){
+    stroke(MustyBrown_const);
+    fill(MustyBrown_const);
+    strokeWeight(.4);
+
+    ellipse(1.5,5.5,4,4) //mouth dark
+
+
+    fill(LightBeige_const);
+    ellipse(1.5,6.65,3,1.5) //tongue
+    line(1,6,1.5,6.5) // tongue dent
+
+    ellipse(2,4.5,1.5,1.75) //tooth right
+    ellipse(1,4.5,1.5,1.75) //tooth left
+
+    noFill();
+    arc(0.5,5, 5,5,3.2,4.3) // top cheek
+    arc(0.75,6,5,5,1.5,2.4) //  bottom cheek
+
+
   
 
+
 }
+
+
+
+
+ 
+
+}
+  
+

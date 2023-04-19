@@ -13,7 +13,7 @@
  * eye_value is an integer number of eyes: either 0, 1, 2, or 3
  * mouth_value is how open the mouth is and should generally range from 0.5 to 10
  */
-function AdamsVintageFellas(eyeType, mouthType){
+function AdamsVintageFellas(eyeType, mouthType,noseType){
 
   
 
@@ -56,37 +56,15 @@ fill(DarkBeige_const)
 
   // arc(3.1, 8.1, 5, 2.7, 5,3,OPEN); // chin right
   // arc(1.2, 8.5, 5, 2, 5,3, OPEN); // chin left
-  
-  
-  strokeWeight(1);
-  stroke(MustyBrown_const);
-  fill(MustyBrown_const);
-  
-  ellipse(-1,-2, 1.5, 4) // left eye
-
-  ellipse(3.5,-2, 1.5, 4) // right eye
-
-
-  noFill();
-  strokeWeight(.4);
-
-  arc(2, 1, 2.5, 3, 5,3); // Nose
-
+ 
    /********MOUTH*********/
   MOUTH(mouthType);
   
+  /********EYES*********/
+  EYES(eyeType);
 
-  fill(MustyBrown_const);
-
-  noStroke();
-
-  fill(LightBeige_const); 
-  triangle(-3.5,-3, -3.5,-.5,-0.5,-1.5,) // left eye indent
-  triangle(1,-3, 1,-0.5,4,-1.5,) // right eye indent
-
-
-  
-
+/********NOSE*********/
+  NOSE(noseType);
   
 }
 
