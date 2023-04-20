@@ -113,7 +113,9 @@ function draw () {
     let mouthType = int(map(s2,0,100,1,4));
     let eyeType = int(map(s1, 0, 100, 1, 4));
     let noseType = int(map(s4, 0, 100, 1, 4));
-    AdamsVintageFellas(eyeType, mouthType,noseType);
+    let earType = int(map(s5,0,100,1,4));
+    let extraType = int(map(s6,0,100,1,4));
+    AdamsVintageFellas(eyeType, mouthType,noseType,earType,extraType);
   }
 
   pop();

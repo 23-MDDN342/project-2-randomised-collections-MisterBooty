@@ -117,7 +117,7 @@ else if (eyeType == 2){
      
      
      noFill(); 
-     arc(-1,-4,10,3,3.65,5) //left eyebrow raised
+     arc(-1,-4,10,3,3.6,5) //left eyebrow raised
      arc(3.5,-4,10,3,4.5,5.75) //left eyebrow raised
      
 

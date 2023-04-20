@@ -88,7 +88,7 @@ function draw () {
   }
 
   /**NOSE */
-  
+
   let noseType;
 
 
@@ -107,8 +107,47 @@ function draw () {
     noseType = 4
   }
 
+   /**EARS */
+  
+   let earType;
 
-  AdamsVintageFellas(mouthType,eyeType, noseType) ;
+
+   let randomEar = random(1,4); // change this later please
+ 
+   if (randomEar = 1){
+    earType = 1;
+   
+   } else if (randomEar = 2){
+    earType = 2
+ 
+   } else if (randomEar = 3){
+    earType = 3
+ 
+   } else if (randomEar = 4){
+    earType = 4
+   }
+
+   /**EXTRAS */
+   let extraType;
+
+
+   let randomExtra = random(1,4); // change this later please
+ 
+   if (randomExtra = 1){
+    extraType = 1;
+   
+   } else if (randomExtra = 2){
+    extraType = 2
+ 
+   } else if (randomExtra = 3){
+    extraType = 3
+ 
+   } else if (randomExtra = 4){
+    extraType = 4
+   }
+
+
+  AdamsVintageFellas(mouthType,eyeType, noseType, earType) ;
 
   
       
