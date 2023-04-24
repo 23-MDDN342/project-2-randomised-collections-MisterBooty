@@ -64,12 +64,13 @@ fill(DarkBeige_const)
 
 /********NOSE*********/
   NOSE(noseType);
-
+  
+ /**extras */
+  EXTRAS(extraType);
   /**EAR */
   EAR(earType);
 
-  /**extras */
-  EXTRAS(extraType);
+ 
   
 }
 

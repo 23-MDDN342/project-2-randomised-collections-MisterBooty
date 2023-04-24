@@ -7,14 +7,68 @@ function EXTRAS(extraType){
   
     
     if (extraType == 1){
-        stroke(MustyBrown_const);
-        fill(LightBeige_const);
-        strokeWeight(.4);
-        rect(0,0,2,2)
+       stroke(MustyBrown_const);
+       
+        strokeWeight(.7);
+
+        fill(MustyBrown_const)
+        rect(-8.2,-6,2.5,2,3,3,3,3) // left circulir base and chip
+        arc(-7,-8.5,5,9,1.5,3.2 ,OPEN) //left horn outline bottom
+         noFill()
+        arc(-7,-9,5,6,1.5,3.2) //left horn outline top 
+
+
+        fill(MustyBrown_const)
+        arc(4,-8.5,5,9,6.2,1.11 ,OPEN) //right  horn outline bottom
+         noFill()
+        arc(4,-9,5,6,6.2,1.15) //right  horn outline top 
+        arc(4,-8.4,5,6,6.2,1.11) //right  horn outline fill
     }
 
     else if (extraType == 2){
-      
+        stroke(MustyBrown_const);
+        fill(LightBeige_const);
+        strokeWeight(.4);
+
+        /**BIG HOLES */
+
+        ellipse(1.5,-7,1.5,3) // hole 1 outline
+        fill(MustyBrown_const);
+        ellipse(1.25,-7,.5,2) // hole 1 dark
+
+        fill(LightBeige_const);
+        ellipse(-3.25,5,1,2.5) // hole 2 outline
+        fill(MustyBrown_const);
+        ellipse(-3.5,5,0.25,1.5) // hole 2 dark
+
+        fill(LightBeige_const);
+        ellipse(-4,-7,.75,2) // hole 3 outline
+        fill(MustyBrown_const);
+        ellipse(-4.2,-7,0.1,1) // hole 3 dark
+
+        fill(LightBeige_const);
+        ellipse(1.2,-2,.75,2) // hole 4 outline
+        fill(MustyBrown_const);
+        ellipse(1,-2,0.1,1) // hole 4 dark
+
+        fill(LightBeige_const);
+        ellipse(-4,-2,1.25,2.5) // hole 5 outline
+        fill(MustyBrown_const);
+        ellipse(-4.2,-2,0.25,1.5) // hole 5 dark
+
+        /**SMALL HOLES */
+
+        ellipse(2,8.2,0.2,0.5) // bottom right under mouth
+        ellipse(5.5,2.7,0.2,0.5) // middle right above mouth
+        ellipse(-1,1,0.2,0.5) // middle middle underneath eye
+        ellipse(-1,-7,0.2,0.5) // middle top above eyebrow
+        ellipse(4,-6.5,0.2,0.5) // top right above eyebrow
+        ellipse(5.5,-2,0.2,0.5) // middle right below eye
+        ellipse(-5,3.5,0.2,0.5) // middle left below ear
+        ellipse(-5,-4.5,0.2,0.5) // middle left below ear
+
+
+        
     }
 
     else if (extraType == 3){
@@ -36,9 +90,9 @@ function EXTRAS(extraType){
     
     
 else if (extraType == 4){
-       stroke(MustyBrown_const);
-        fill(LightBeige_const);
-        strokeWeight(.6);
+    stroke(MustyBrown_const);
+    fill(LightBeige_const);
+    strokeWeight(.7)
         line(1.5,-7,8,-7) // arrow stick
         strokeWeight(.4)
         quad(7,-7,8,-8,9,-8,8,-7); // arrow feath top       

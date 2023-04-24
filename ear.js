@@ -87,8 +87,8 @@ else if (earType == 2){
         push();
         noFill()
         rotate(-0.7)
-        arc(-5.2,-5,1.5,3.5,1.7,4.7,) // ear inside lines
-        arc(-4.5,-6,1.5,3.5,1.7,4.25,) // ear inside lines
+        arc(-5.2,-5,1.5,3.5,1.7,4.7,) // ear inside line 1
+        arc(-4.5,-6,1.5,3.5,1.7,4.25,) // ear inside line 2
         pop();
     
       

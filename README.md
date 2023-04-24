@@ -31,3 +31,9 @@ So far, I’ve created four sets of nose, eyes and mouths. each of these work wi
 
 
 Following on from last week, I have now created 4 differents ets of eyes, noses and mouths. I made the decision to thicken up the stroke for the eyebrows to exaggerate their effect. I’m trying to be careful to not have the different types clash and not work, which proves a little difficult but is a good filter for my limitations.
+
+22/ 04
+
+After a painstaking long process of drawing lots and lots of shapes, I have finally finished a baseline of variables for each facial feature of my character. This means that now i have 5 categories; eyes, mouth, nose, ear, extras with each have four different types. I believe this will give me a nice set of variation to include. I decided that i would include the ‘extras’ category instead of hair or hats as i didn’t exactly include room for them, but later on i could try figure out something underneath that topic. my next part to work on is weighted variables and actually featuring them in the arrangement.
+
+After last week I added 4 sets of ears and extras each. I decide to go with ‘extras’ instead of hats and hair as I didn’t create enough room for myself in the beginning but I could perhaps add something along those lines later. I wanted to create a colour variable that would change it from a dark brown to a very light beige but in order to include this 
