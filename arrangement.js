@@ -41,18 +41,36 @@ function draw () {
   // reset the random number generator each time draw is called
   randomSeed(curRandomSeed);
 
+  //colours
+  const LightBeige_const = [186,169,149];
+  const DarkBeige_const = [122,111,98];
+  const MustyBrown_const = [46,42,37];
+  const FadeBrown_const = [59,53,47];
+  const SoftBrown_const = [51,46,41];
+
   // clear screen
-  background(bg_color1);
+  background(DarkBeige_const);
   noStroke();
 
+  const facesAcross = 7;
+  const facesDown = 7;
 
-  /************start */
+  let w = canvasWidth / 7;
+  let h = canvasHeight / 4;
+  for(let i=0.5; i<=facesDown; i++) { // seems to postion x axis of face code
+    for(let j=5; j<facesAcross; j++) { // positions y axis of face code
+      let faceX = w/2 + w*j
+      let faceY = h/2 + h*j
+      
+        
+
+/************start */
 
 
   /*MOUTH*****/
   let mouthType;
 
-  let randomMouth = random(1,4); // change this later please
+  let randomMouth = int(random(0,4)); // change this later please
 
   if (randomMouth = 1){
     mouthType = 1;
@@ -72,7 +90,7 @@ function draw () {
   let eyeType;
 
 
-  let randomEye = random(1,4); // change this later please
+  let randomEye = int(random(0,4)); // change this later please
 
   if (randomEye = 1){
     eyeType = 1;
@@ -92,7 +110,7 @@ function draw () {
   let noseType;
 
 
-  let randomNose = random(1,4); // change this later please
+  let randomNose = int(random(0,4)); // change this later please
 
   if (randomNose = 1){
     noseType = 1;
@@ -112,7 +130,7 @@ function draw () {
    let earType;
 
 
-   let randomEar = random(1,4); // change this later please
+   let randomEar = int(random(0,4)); // change this later please
  
    if (randomEar = 1){
     earType = 1;
@@ -131,7 +149,7 @@ function draw () {
    let extraType;
 
 
-   let randomExtra = random(1,4); // change this later please
+   let randomExtra = int(random(0,4)); // change this later please
  
    if (randomExtra = 1){
     extraType = 1;
@@ -144,14 +162,22 @@ function draw () {
  
    } else if (randomExtra = 4){
     extraType = 4
-   }
-
-
-  AdamsVintageFellas(mouthType,eyeType, noseType, earType) ;
-
-  
-      
     }
+ 
+    
+      push();
+      translate(canvasWidth * j / (facesAcross +8), canvasHeight * i)
+      if(j == 1 ){
+      scale(w/20,h/20)
+      } else {
+        scale(w/15,h/15)
+      }
+        AdamsVintageFellas(mouthType,eyeType, noseType, earType, extraType) ;
+      pop();
+      }
+    }
+  }   
+    
   /********finish */
 
 function keyTyped() {

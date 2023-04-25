@@ -9,6 +9,8 @@ let curRandomSeed = 0;
 let lastSwapTime = 0;
 const millisPerSwap = 3000;
 
+// global variables for colors
+const bg_color1 = [71, 222, 219];
 function setup () {
   // create the drawing canvas, save the canvas element
   let main_canvas = createCanvas(canvasWidth, canvasHeight);
@@ -25,8 +27,7 @@ function changeRandomSeed() {
   lastSwapTime = millis();
 }
 
-// global variables for colors
-const bg_color1 = [71, 222, 219]
+
 
 function mouseClicked() {
   changeRandomSeed();
@@ -40,51 +41,141 @@ function draw () {
   // reset the random number generator each time draw is called
   randomSeed(curRandomSeed);
 
+  //colours
+  const LightBeige_const = [186,169,149];
+  const DarkBeige_const = [122,111,98];
+  const MustyBrown_const = [46,42,37];
+  const FadeBrown_const = [59,53,47];
+  const SoftBrown_const = [51,46,41];
+
   // clear screen
-  background(bg_color1);
+  background(DarkBeige_const);
   noStroke();
 
-  // draw a 7x4 grid of faces
+  const facesAcross = 7;''
+  const facesDown = 7;
+
   let w = canvasWidth / 7;
   let h = canvasHeight / 4;
-  for(let i=0; i<4; i++) {
+  for(let i=0; i<=7; i++) {
     for(let j=0; j<7; j++) {
-      let y = h/2 + h*i;
-      let x = w/2 + w*j;
-      if (i == 0) {
-        // center face
-        let eye_value = 2;
-        let tilt_value = random(-45, 45);
-        let mouth_value = random(1, 3);
-        let is_cyclops = random(0, 100);
-        if(is_cyclops < 10) {
-          eye_value = 1;
-          tilt_value = random(-5, 5);
-          mouth_value = random(5, 10);
-        }
-        push();
-        translate(x, y);
-        scale(w/25, h/25);
-        orangeAlienFace(tilt_value, eye_value, mouth_value);
-        pop();
+      let faceX = w/2 + w*j
+      let faceY = h/2 + h*j
+      if(i == 1 ){
+        
+
+/************start */
+
+
+  /*MOUTH*****/
+  let mouthType;
+
+  let randomMouth = random(1,4); // change this later please
+
+  if (randomMouth = 1){
+    mouthType = 1;
+  
+  } else if (randomMouth = 2){
+    mouthType = 2
+
+  } else if (randomMouth = 3){
+    mouthType = 3
+
+  } else if (randomMouth = 4){
+    mouthType = 4
+  }
+
+/**EYES */
+
+  let eyeType;
+
+
+  let randomEye = int(random(0,4)); // change this later please
+
+  if (randomEye = 1){
+    eyeType = 1;
+  
+  } else if (randomEye = 2){
+    eyeType = 2
+
+  } else if (randomEye = 3){
+    eyeType = 3
+
+  } else if (randomEye = 4){
+    eyeType = 4
+  }
+
+  /**NOSE */
+
+  let noseType;
+
+
+  let randomNose = int(random(0,4)); // change this later please
+
+  if (randomNose = 1){
+    noseType = 1;
+  
+  } else if (randomNose = 2){
+    noseType = 2
+
+  } else if (randomNose = 3){
+    noseType = 3
+
+  } else if (randomNose = 4){
+    noseType = 4
+  }
+
+   /**EARS */
+  
+   let earType;
+
+
+   let randomEar = int(random(0,4)); // change this later please
+ 
+   if (randomEar = 1){
+    earType = 1;
+   
+   } else if (randomEar = 2){
+    earType = 2
+ 
+   } else if (randomEar = 3){
+    earType = 3
+ 
+   } else if (randomEar = 4){
+    earType = 4
+   }
+
+   /**EXTRAS */
+   let extraType;
+
+
+   let randomExtra = int(random(0,4)); // change this later please
+ 
+   if (randomExtra = 1){
+    extraType = 1;
+   
+   } else if (randomExtra = 2){
+    extraType = 2
+ 
+   } else if (randomExtra = 3){
+    extraType = 3
+ 
+   } else if (randomExtra = 4){
+    extraType = 4
+   }
+push();
+translate(canvasWidth * j /(facesAcross + 1),canvasHeight * j /(facesDown+1))
+scale(w/10,h/10)
+  AdamsVintageFellas(mouthType,eyeType, noseType, earType, extraType) ;
+pop();
       }
-      else if (i > 0) {
-        // all other faces
-        push();
-        translate(x, y);
-        scale(w/25, h/25);
-        if((i+j)%2 == 0) {
-          simplePurpleFace();
-        }
-        else {
-          thinness_value = random(0, 100);
-          blockyFace(thinness_value);
-        }
-        pop();
-      }
+
+
     }
   }
-}
+      
+    }
+  /********finish */
 
 function keyTyped() {
   if (key == '!') {
