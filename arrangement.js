@@ -6,6 +6,8 @@ const canvasWidth = 960;
 const canvasHeight = 500;
 let curRandomSeed = 0;
 
+const NumberFaces = 25
+
 let lastSwapTime = 0;
 const millisPerSwap = 3000;
 
@@ -19,7 +21,7 @@ function setup () {
   curRandomSeed = int(random(0, 1000));
 
   // rotation in degrees
-  angleMode(DEGREES);
+  // angleMode(DEGREES);
 }
 
 function changeRandomSeed() {
@@ -57,10 +59,12 @@ function draw () {
 
   let w = canvasWidth / 7;
   let h = canvasHeight / 4;
-  for(let i=0.5; i<=facesDown; i++) { // seems to postion x axis of face code
-    for(let j=5; j<facesAcross; j++) { // positions y axis of face code
-      let faceX = w/2 + w*j
-      let faceY = h/2 + h*j
+  for(let i=0; i<NumberFaces; i++) { // seems to postion x axis of face code
+    for(let j=0; j<5; j++) { // positions y axis of face code
+      let faceX2 = w/2 + w*i
+      let faceY2 = h/2 + h*j
+      let Wscale = 200
+      let Hscale = 120
       
         
 
@@ -166,13 +170,15 @@ function draw () {
  
     
       push();
-      translate(canvasWidth * j / (facesAcross +8), canvasHeight * i)
-      if(j == 1 ){
-      scale(w/20,h/20)
-      } else {
-        scale(w/15,h/15)
-      }
-        AdamsVintageFellas(mouthType,eyeType, noseType, earType, extraType) ;
+      // translate(canvasWidth * j / (facesAcross), canvasHeight *i / facesDown )
+      // if(j == 1 ){
+      // scale(w/20,h/20)
+      // } else {
+      //   scale(w/15,h/15)
+      // }
+      translate(faceX2,faceY2);
+         scale(canvasWidth/Wscale,canvasHeight/Hscale);
+           AdamsVintageFellas(mouthType, eyeType, noseType, earType, extraType) ;
       pop();
       }
     }

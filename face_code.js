@@ -41,7 +41,7 @@ function AdamsVintageFellas(eyeType, mouthType,noseType,earType,extraType){
 
  
 fill(DarkBeige_const)
-  rect(-10,-10,20,20)
+  rect(-10,-10,20,20) // bounding box
 
 
   strokeWeight(.4);
@@ -51,13 +51,9 @@ fill(DarkBeige_const)
   ellipse(0,0, faceX, faceY) // face
 
   arc(-1,-3.1, 14, 13,2.566 ,5); // head top
-
-
-  // arc(3.1, 8.1, 5, 2.7, 5,3,OPEN); // chin right
-  // arc(1.2, 8.5, 5, 2, 5,3, OPEN); // chin left
  
    /********MOUTH*********/
-  MOUTH(mouthType);
+   MOUTH(mouthType);
   
   /********EYES*********/
   EYES(eyeType);
