@@ -6,7 +6,7 @@ const canvasWidth = 960;
 const canvasHeight = 500;
 let curRandomSeed = 0;
 
-const NumberFaces = 25
+const NumberFaces = 6
 
 let lastSwapTime = 0;
 const millisPerSwap = 3000;
@@ -54,16 +54,16 @@ function draw () {
   background(DarkBeige_const);
   noStroke();
 
-  const facesAcross = 7;
-  const facesDown = 7;
+  const facesAcross = 14;
+  const facesDown = 8;
 
-  let w = canvasWidth / 7;
+  let w = canvasWidth / 6;
   let h = canvasHeight / 4;
   for(let i=0; i<NumberFaces; i++) { // seems to postion x axis of face code
     for(let j=0; j<5; j++) { // positions y axis of face code
       let faceX2 = w/2 + w*i
       let faceY2 = h/2 + h*j
-      let Wscale = 200
+      let Wscale = 220
       let Hscale = 120
       
         
