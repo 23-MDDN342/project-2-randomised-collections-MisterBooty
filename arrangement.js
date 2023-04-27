@@ -57,14 +57,14 @@ function draw () {
   const facesAcross = 14;
   const facesDown = 8;
 
-  let w = canvasWidth / 6;
-  let h = canvasHeight / 4;
-  for(let i=0; i<NumberFaces; i++) { // seems to postion x axis of face code
-    for(let j=0; j<5; j++) { // positions y axis of face code
+  let w = canvasWidth / 3; // 3 faces across
+  let h = canvasHeight / 3; 3 // faces down
+  for(let i=0; i<7; i++) { // number of faces across regardless of canvas width
+    for(let j=0; j<7; j++) { // number of faces down regardless of canvas width
       let faceX2 = w/2 + w*i
       let faceY2 = h/2 + h*j
-      let Wscale = 220
-      let Hscale = 120
+      let Wscale = 175 // width scale faces
+      let Hscale = 100 // height scale face
       
         
 
@@ -74,18 +74,20 @@ function draw () {
   /*MOUTH*****/
   let mouthType;
 
-  let randomMouth = int(random(0,4)); // change this later please
+  
 
-  if (randomMouth = 1){
+  let randomMouth = random(1,100); // change this later please
+
+  if (randomMouth < 20){ // type 1 20% of the time
     mouthType = 1;
   
-  } else if (randomMouth = 2){
+  } else if (randomMouth >= 20 && randomMouth <= 40){ // type 2 20% of the time
     mouthType = 2
 
-  } else if (randomMouth = 3){
+  } else if (randomMouth > 40 && randomMouth <= 75){ // type 3 35% of the time
     mouthType = 3
 
-  } else if (randomMouth = 4){
+  } else if (randomMouth > 75){ // type 4 25% of the time
     mouthType = 4
   }
 
@@ -94,18 +96,18 @@ function draw () {
   let eyeType;
 
 
-  let randomEye = int(random(0,4)); // change this later please
+  let randomEye = random(1,100); // change this later please
 
-  if (randomEye = 1){
+  if (randomEye < 25){ // type 1 25% of the time
     eyeType = 1;
   
-  } else if (randomEye = 2){
+  } else if (randomEye >= 25 && randomEye <= 50){ // type 2 25% of the time
     eyeType = 2
 
-  } else if (randomEye = 3){
+  } else if (randomEye > 50 && randomEye <= 80){ // type 3 30% of the time
     eyeType = 3
 
-  } else if (randomEye = 4){
+  } else if (randomEye >80){ // type 4 20% of the time
     eyeType = 4
   }
 
@@ -114,7 +116,7 @@ function draw () {
   let noseType;
 
 
-  let randomNose = int(random(0,4)); // change this later please
+  let randomNose = int(random(0,4)); // change this into a different type of random
 
   if (randomNose = 1){
     noseType = 1;
@@ -176,9 +178,15 @@ function draw () {
       // } else {
       //   scale(w/15,h/15)
       // }
-      translate(faceX2,faceY2);
-         scale(canvasWidth/Wscale,canvasHeight/Hscale);
-           AdamsVintageFellas(mouthType, eyeType, noseType, earType, extraType) ;
+          translate(faceX2,faceY2);
+            scale(canvasWidth/Wscale,canvasHeight/Hscale);
+              AdamsVintageFellas(mouthType, eyeType, noseType, earType, extraType) ;
+      pop();
+
+      push(); // this in the inbetween faces, givng a diagnoal effect
+        translate(faceX2 - 155 ,faceY2 - 75);
+          scale(canvasWidth/Wscale,canvasHeight/Hscale);
+            AdamsVintageFellas(mouthType, eyeType, noseType, earType, extraType) ;
       pop();
       }
     }
