@@ -29,11 +29,22 @@ function changeRandomSeed() {
   lastSwapTime = millis();
 }
 
+///Guassian disturbution from lecture
+function getAveragedRandom(min, max, n) {
+   let sum = 0;
+       for (let i=0; i<n; i++) {
+           sum = sum + random(min, max);
+ 
+  }
+  return sum / n;
+ }
 
 
 function mouseClicked() {
   changeRandomSeed();
 }
+
+
 
 function draw () {
   if(millis() > lastSwapTime + millisPerSwap) {
@@ -116,18 +127,18 @@ function draw () {
   let noseType;
 
 
-  let randomNose = int(random(0,4)); // change this into a different type of random
+  let randomNose = random(1,100); // change this into a different type of random
 
-  if (randomNose = 1){
+  if (randomNose < 25 ){ // type 1 25% of the time
     noseType = 1;
   
-  } else if (randomNose = 2){
+  } else if (randomNose  >= 25 && randomNose <= 50){ // type 2 25% of the time
     noseType = 2
 
-  } else if (randomNose = 3){
+  } else if (randomNose >= 50 && randomNose <= 75){// // type 3 25% of the time
     noseType = 3
 
-  } else if (randomNose = 4){
+  } else if (randomNose >  75){// // type 4 25% of the time
     noseType = 4
   }
 
@@ -136,18 +147,18 @@ function draw () {
    let earType;
 
 
-   let randomEar = int(random(0,4)); // change this later please
+   let randomEar = random(1,100); // change this later please
  
-   if (randomEar = 1){
+   if (randomEar < 25){ // type 1 25% of the time
     earType = 1;
    
-   } else if (randomEar = 2){
+   } else if (randomEar >= 25 && randomEar <= 50){ // type 2 25% of the time
     earType = 2
  
-   } else if (randomEar = 3){
+   } else if (randomEar >= 50 && randomEar <= 75){ // type 3 25% of the time
     earType = 3
  
-   } else if (randomEar = 4){
+   } else if (randomEar > 75){
     earType = 4
    }
 
@@ -155,18 +166,18 @@ function draw () {
    let extraType;
 
 
-   let randomExtra = int(random(0,4)); // change this later please
+   let randomExtra = random(1,100); // change this later please
  
-   if (randomExtra = 1){
+   if (randomExtra < 15){ // type 1 15% of the time
     extraType = 1;
    
-   } else if (randomExtra = 2){
+   } else if (randomExtra >= 15 && randomExtra <= 50){ // type 2 25% of the time
     extraType = 2
  
-   } else if (randomExtra = 3){
+   } else if (randomExtra >= 50 && randomExtra <= 85){ // type 3 25% of the time
     extraType = 3
  
-   } else if (randomExtra = 4){
+   } else if (randomExtra > 85){ // type 4 15% of the time
     extraType = 4
     }
  
