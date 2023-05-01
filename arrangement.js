@@ -13,6 +13,11 @@ const millisPerSwap = 3000;
 
 // global variables for colors
 const bg_color1 = [71, 222, 219];
+
+
+
+
+
 function setup () {
   // create the drawing canvas, save the canvas element
   let main_canvas = createCanvas(canvasWidth, canvasHeight);
@@ -61,19 +66,35 @@ function draw () {
   const FadeBrown_const = [59,53,47];
   const SoftBrown_const = [51,46,41];
 
+  let LightBeige =  color ('#BAA995')
+  let DarkBeige = color ('#7A6F62')
+  let MustyBrown = color ('#2E2A25')
+  let FadeBrown = color ('#3B352F')
+  let SoftBrown = color ('#332E29')
+
   // clear screen
-  background(DarkBeige_const);
+
+  background(getAveragedRandom(1,250,8)); // colour randomness for background
   noStroke();
 
   const facesAcross = 14;
   const facesDown = 8;
 
   let w = canvasWidth / 3; // 3 faces across
-  let h = canvasHeight / 3; 3 // faces down
+  let h = canvasHeight / 3; // 3 faces down
+
+  let w2 = canvasWidth / 3; // 6 faces across
+  let h2 = canvasHeight / 3; // 6 faces down
+
   for(let i=0; i<7; i++) { // number of faces across regardless of canvas width
     for(let j=0; j<7; j++) { // number of faces down regardless of canvas width
+
       let faceX2 = w/2 + w*i
       let faceY2 = h/2 + h*j
+
+      let faceXoffset = w2 + w2*i
+      let faceYoffset = h2 + h2*j
+
       let Wscale = 175 // width scale faces
       let Hscale = 100 // height scale face
       
@@ -102,6 +123,7 @@ function draw () {
     mouthType = 4
   }
 
+
 /**EYES */
 
   let eyeType;
@@ -121,6 +143,7 @@ function draw () {
   } else if (randomEye >80){ // type 4 20% of the time
     eyeType = 4
   }
+  
 
   /**NOSE */
 
@@ -181,25 +204,32 @@ function draw () {
     extraType = 4
     }
  
-    
-      push();
       // translate(canvasWidth * j / (facesAcross), canvasHeight *i / facesDown )
       // if(j == 1 ){
       // scale(w/20,h/20)
       // } else {
       //   scale(w/15,h/15)
       // }
+
+      // if() 
+      push();
           translate(faceX2,faceY2);
             scale(canvasWidth/Wscale,canvasHeight/Hscale);
               AdamsVintageFellas(mouthType, eyeType, noseType, earType, extraType) ;
       pop();
 
-      push(); // this in the inbetween faces, givng a diagnoal effect
-        translate(faceX2 - 155 ,faceY2 - 75);
-          scale(canvasWidth/Wscale,canvasHeight/Hscale);
-            AdamsVintageFellas(mouthType, eyeType, noseType, earType, extraType) ;
-      pop();
-      }
+      push(); // this in the inbetween faces, givng a diagonal effect
+      translate(faceXoffset -960,faceYoffset- 325);
+        scale(canvasWidth/Wscale,canvasHeight/Hscale);
+          AdamsVintageFellas(mouthType, eyeType, noseType, earType, extraType) ;
+    pop();
+
+      // push(); // this in the inbetween faces, givng a diagnoal effect
+      //   translate(faceX2 - 155 ,faceY2 - 75);
+      //     scale(canvasWidth/Wscale,canvasHeight/Hscale);
+      //       AdamsVintageFellas(mouthType, eyeType, noseType, earType, extraType) ;
+      // pop();
+  }
     }
   }   
     

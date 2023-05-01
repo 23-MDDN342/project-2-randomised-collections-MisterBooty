@@ -55,4 +55,8 @@ else if (noseType == 4){
         ellipse(2.1,1.2,0.1) // blackhead bottom
 
 }
+else if(noseType == 5){
+    
+}
+
 }

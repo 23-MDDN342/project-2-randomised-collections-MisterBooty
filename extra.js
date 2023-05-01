@@ -6,7 +6,7 @@ function EXTRAS(extraType){
     const SoftBrown_const = [51,46,41];
   
     
-    if (extraType == 1){
+    if (extraType == 2){
        stroke(MustyBrown_const);
        
         strokeWeight(.7);
@@ -25,7 +25,7 @@ function EXTRAS(extraType){
         arc(4,-8.4,5,6,6.2,1.11) //right  horn outline fill
     }
 
-    else if (extraType == 2){
+    else if (extraType == 1){
         stroke(MustyBrown_const);
         fill(LightBeige_const);
         strokeWeight(.4);
@@ -71,7 +71,7 @@ function EXTRAS(extraType){
         
     }
 
-    else if (extraType == 3){
+    else if (extraType == 4){
    stroke(MustyBrown_const);
         noFill()
         strokeWeight(.3);
@@ -89,7 +89,7 @@ function EXTRAS(extraType){
 
     
     
-else if (extraType == 4){
+else if (extraType == 3){
     stroke(MustyBrown_const);
     fill(LightBeige_const);
     strokeWeight(.7)
@@ -101,4 +101,8 @@ else if (extraType == 4){
         strokeWeight(.4)
         arc(0.4,-6.75,2,2,5,0.5) // head indenttom 
 }  
+else if(extraType == 5){
+    
+}
+
 }

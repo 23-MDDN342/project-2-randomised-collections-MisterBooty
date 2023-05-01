@@ -7,7 +7,7 @@ function EAR(earType){
     const SoftBrown_const = [51,46,41];
   
     
-    if (earType == 1){
+    if (earType == 1){ // ear with earring
       stroke(MustyBrown_const);
         fill(LightBeige_const);
         strokeWeight(.4);
@@ -25,7 +25,7 @@ function EAR(earType){
       
     }
 
-    else if (earType == 4){
+    else if (earType == 4){ // headphones
         stroke(MustyBrown_const);
         fill(LightBeige_const);
         strokeWeight(.4);
@@ -39,7 +39,9 @@ function EAR(earType){
         strokeWeight(1.5)
         arc(-4,-4.5,5,9,3,4.75) //headphpne band
         strokeWeight(.4)
-        stroke(LightBeige_const);
+
+        // these lines are to make it seem that the headphone band is going around the head
+        stroke(LightBeige_const); 
         arc(-3,-4.9,5,8,3,4.75);
         strokeWeight(.5)
        line(-4,-8.5,-3,-8.5)
@@ -48,7 +50,7 @@ function EAR(earType){
        
     }
 
-    else if (earType == 3){
+    else if (earType == 3){ // big hearing ear
         fill(LightBeige_const);
       
         noStroke()
@@ -62,7 +64,7 @@ function EAR(earType){
 
         noFill()
         arc(-7, 0, 2.5, 4.5, 2.3,6.5,OPEN); // ear big line
-        arc(-6.5, 0.5, 1.5, 1.5, 2,6,OPEN);
+         arc(-6.5, 0.5, 1.5, 1.5, 2,6,OPEN);
         arc(-6.75, 1.5, 2, 1.5, 6,3,OPEN);
     }
 
@@ -98,5 +100,7 @@ else if (earType == 2){
      
 
 }
+
+
 
 }
