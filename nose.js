@@ -7,7 +7,7 @@ function NOSE(noseType){
     const SoftBrown_const = [51,46,41];
   
     
-    if (noseType == 1){
+    if (noseType == 1){ // basic ball nose
         stroke(MustyBrown_const);
         fill(LightBeige_const)
         strokeWeight(.4);
@@ -15,7 +15,7 @@ function NOSE(noseType){
       
     }
 
-    else if (noseType == 2){
+    else if (noseType == 2){ // pinocchio nose
         stroke(MustyBrown_const);
         fill(LightBeige_const);
         strokeWeight(.4);
@@ -30,7 +30,7 @@ function NOSE(noseType){
        
     }
 
-    else if (noseType == 3){
+    else if (noseType == 3){ // plastic surgery nose
      stroke(MustyBrown_const);
         noFill()
         strokeWeight(.4);
@@ -43,7 +43,7 @@ function NOSE(noseType){
 
     
     
-else if (noseType == 4){
+else if (noseType == 4){ // pimple nose
   stroke(MustyBrown_const);
         fill(LightBeige_const)
         strokeWeight(.4);

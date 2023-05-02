@@ -66,34 +66,23 @@ function draw () {
   const FadeBrown_const = [59,53,47];
   const SoftBrown_const = [51,46,41];
 
-  let LightBeige =  color ('#BAA995')
-  let DarkBeige = color ('#7A6F62')
-  let MustyBrown = color ('#2E2A25')
-  let FadeBrown = color ('#3B352F')
-  let SoftBrown = color ('#332E29')
 
   // clear screen
 
-  background(getAveragedRandom(1,250,8)); // colour randomness for background
+  background(DarkBeige_const); // colour randomness for background
   noStroke();
-
-  const facesAcross = 14;
-  const facesDown = 8;
 
   let w = canvasWidth / 3; // 3 faces across
   let h = canvasHeight / 3; // 3 faces down
 
-  let w2 = canvasWidth / 3; // 6 faces across
-  let h2 = canvasHeight / 3; // 6 faces down
-
   for(let i=0; i<7; i++) { // number of faces across regardless of canvas width
     for(let j=0; j<7; j++) { // number of faces down regardless of canvas width
 
-      let faceX2 = w/2 + w*i
-      let faceY2 = h/2 + h*j
+      let faceX2 = w/2 + w*i // repeats the faces across the x axis according to w
+      let faceY2 = h/2 + h*j// repeats the faces across the y axis according to y
 
-      let faceXoffset = w2 + w2*i
-      let faceYoffset = h2 + h2*j
+      let faceXoffset = w + w*i // repeats the faces across the x axis according to w2
+      let faceYoffset = h + h*j// repeats the faces across the y axis according to y2
 
       let Wscale = 175 // width scale faces
       let Hscale = 100 // height scale face
@@ -191,44 +180,32 @@ function draw () {
 
    let randomExtra = random(1,100); // change this later please
  
-   if (randomExtra < 15){ // type 1 15% of the time
+   if (randomExtra < 20){ // type 1 20% of the time
     extraType = 1;
    
-   } else if (randomExtra >= 15 && randomExtra <= 50){ // type 2 25% of the time
+   } else if (randomExtra >= 20 && randomExtra <= 50){ // type 30% of the time
     extraType = 2
  
-   } else if (randomExtra >= 50 && randomExtra <= 85){ // type 3 25% of the time
+   } else if (randomExtra >= 50 && randomExtra <= 90){ // type 3 40% of the time
     extraType = 3
  
-   } else if (randomExtra > 85){ // type 4 15% of the time
+   } else if (randomExtra > 90){ // type 4 15% of the time
     extraType = 4
     }
  
-      // translate(canvasWidth * j / (facesAcross), canvasHeight *i / facesDown )
-      // if(j == 1 ){
-      // scale(w/20,h/20)
-      // } else {
-      //   scale(w/15,h/15)
-      // }
-
-      // if() 
       push();
-          translate(faceX2,faceY2);
+          translate(faceX2,faceY2); // put the rows of faces on canvas
             scale(canvasWidth/Wscale,canvasHeight/Hscale);
               AdamsVintageFellas(mouthType, eyeType, noseType, earType, extraType) ;
       pop();
 
-      push(); // this in the inbetween faces, givng a diagonal effect
-      translate(faceXoffset -960,faceYoffset- 325);
+      push(); // this the inbetween faces, but the number of them is larger
+      translate(faceXoffset -960,faceYoffset- 325); // has to be pushed dramatically to get rid of the possibilty f the same face showing up
         scale(canvasWidth/Wscale,canvasHeight/Hscale);
           AdamsVintageFellas(mouthType, eyeType, noseType, earType, extraType) ;
     pop();
 
-      // push(); // this in the inbetween faces, givng a diagnoal effect
-      //   translate(faceX2 - 155 ,faceY2 - 75);
-      //     scale(canvasWidth/Wscale,canvasHeight/Hscale);
-      //       AdamsVintageFellas(mouthType, eyeType, noseType, earType, extraType) ;
-      // pop();
+  
   }
     }
   }   

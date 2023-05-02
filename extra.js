@@ -75,15 +75,15 @@ function EXTRAS(extraType){
    stroke(MustyBrown_const);
         noFill()
         strokeWeight(.3);
-        arc(-2,-7,3,3.5,3,4.5) //scar main line
-        line(-3,-7.1,-4,-7.1) // bottom scar short line
-        line(-2.75,-7.6,-3.9,-7.8)
-        line(-2.4,-8.1,-3.4,-8.5)
+        arc(-2,-7,3,3.5,3,4.5) //scar 1 main line
+        line(-3,-7.1,-4,-7.1) // bottom scar 1 short line
+         line(-2.75,-7.6,-3.9,-7.8) // scar 1 middle line
+        line(-2.4,-8.1,-3.4,-8.5) // scar 1 top line
 
-        arc(1.5,-5.75, 5,5,4.75,6)
-        line(3,-6.75,4,-7)
-        line(2.25,-7.5,3,-8)
-        ellipse(3,-7.25,0.01)
+        arc(1.5,-5.75, 5,5,4.75,6) // scar 2 main line
+        line(3,-6.75,4,-7) // scar 2 bottm line
+        line(2.25,-7.5,3,-8) // scar 2 top line
+        ellipse(3,-7.25,0.01) // scar 2 middle dot
        
     }
 

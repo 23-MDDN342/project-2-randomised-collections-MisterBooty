@@ -7,7 +7,7 @@ function EYES(eyeType){
     const SoftBrown_const = [51,46,41];
   
     
-    if (eyeType == 1){
+    if (eyeType == 1){ // surpised/ eyebrows raised expression
         strokeWeight(1);
         stroke(MustyBrown_const);
         fill(MustyBrown_const);
@@ -31,7 +31,7 @@ function EYES(eyeType){
       
     }
 
-    else if (eyeType == 4){
+    else if (eyeType == 4){ // suspicious / confused eyes
         strokeWeight(1);
         stroke(MustyBrown_const);
         fill(MustyBrown_const);
@@ -62,7 +62,7 @@ function EYES(eyeType){
     
     }
 
-    else if (eyeType == 3){
+    else if (eyeType == 3){ // sad, scared and tired eyes
         /**Eyes */
         strokeWeight(1);
         stroke(MustyBrown_const);
@@ -98,7 +98,7 @@ function EYES(eyeType){
 
     
     
-else if (eyeType == 2){
+else if (eyeType == 2){ // dead eyes
    
      /**Eyes */
      strokeWeight(1);
@@ -108,11 +108,11 @@ else if (eyeType == 2){
    
      
 
-     line(-2,-3.5,0,-0.5)
-     line(0,-3.5,-2,-0.5)
+     line(-2,-3.5,0,-0.5) // left x line 1
+     line(0,-3.5,-2,-0.5) // left x line 2
 
-     line(2.5,-3.5,4.5,-0.5)
-     line(4.5,-3.5,2.5,-0.5)
+     line(2.5,-3.5,4.5,-0.5) // right x line 1
+     line(4.5,-3.5,2.5,-0.5) // right x line 2
 
      
      
@@ -122,6 +122,7 @@ else if (eyeType == 2){
      
 
 }
+
 
 
 

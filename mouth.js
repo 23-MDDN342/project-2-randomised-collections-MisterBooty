@@ -7,7 +7,7 @@ function MOUTH(mouthType){
     const SoftBrown_const = [51,46,41];
   
     
-    if (mouthType == 1){
+    if (mouthType == 1){ // happy chapy mouth
 
         stroke(MustyBrown_const);
         noFill();
@@ -23,7 +23,7 @@ function MOUTH(mouthType){
         arc(-2.7, 2, 3, 3, 0, HALF_PI); // left cheek outline
     }
 
-    else if (mouthType == 2){
+    else if (mouthType == 2){ // whistle mouth
 
         stroke(MustyBrown_const);
         noFill();
@@ -46,7 +46,7 @@ function MOUTH(mouthType){
     
     }
 
-    else if (mouthType == 3){
+    else if (mouthType == 3){ //shocked, sad or scared mouth
 
         stroke(MustyBrown_const);
         fill(MustyBrown_const);
@@ -69,7 +69,7 @@ function MOUTH(mouthType){
        
     
     }
-else if (mouthType == 4){
+else if (mouthType == 4){ // buck tooth mouth
     stroke(MustyBrown_const);
     fill(MustyBrown_const);
     strokeWeight(.4);
@@ -93,7 +93,6 @@ else if (mouthType == 4){
 
 
 }
-
 
 
 
