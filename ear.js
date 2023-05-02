@@ -60,12 +60,12 @@ function EAR(earType){
         stroke(MustyBrown_const);
         strokeWeight(.4);
         arc(-6.5, 3, 2.5, 3, 6.2,3.5,OPEN); // ear lobe
-        arc(-7, 0, 4, 6, 1.7,6,OPEN); // ear top
+        arc(-7, 0, 4, 6, 1.7,6,OPEN); //outer  ear top
 
         noFill()
         arc(-7, 0, 2.5, 4.5, 2.3,6.5,OPEN); // ear big line
-         arc(-6.5, 0.5, 1.5, 1.5, 2,6,OPEN);
-        arc(-6.75, 1.5, 2, 1.5, 6,3,OPEN);
+         arc(-6.5, 0.5, 1.5, 1.5, 2,6,OPEN); // small inside ear lobe curve
+        arc(-6.75, 1.5, 2, 1.5, 6,3,OPEN); // ear smaller line
     }
 
     
@@ -84,7 +84,7 @@ else if (earType == 2){
         fill(LightBeige_const)
         arc(-8,-2,2.6,3.5,2.75,4.75) // ear point
        
-        arc(-6.5,-3.6,3,3.5,1.3,3.2) //ear dip
+        arc(-6.5,-3.6,3,3.5,1.3,3.2) //ear dip to mask curve
 
         push();
         noFill()

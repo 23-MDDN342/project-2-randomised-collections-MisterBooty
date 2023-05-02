@@ -12,13 +12,7 @@ let faceGuideCheckbox;
 
 const CanvasColour = [122,111, 98];
 
-// color ('#BAA995') // lightest dirty beige , or 186,169,149
-// color ('#7A6F62') // darker dirty beige, or 122,111, 98
-// color ('#2E2A25') // Musty dark brown, or 46,42,37
-// color ('#3B352F') // Faded dark brown. lighter then musty brown, or 59,53,47
-// color ('#332E29') // soft dark brown. or 51,46,41
-// color ('#FFFFFF') // White
-// color ('#000000') // Black
+
 
 function setup () {
 
@@ -110,11 +104,11 @@ function draw () {
     simplePurpleFace();
   }
   if (mode == '4') {
-    let mouthType = int(map(s2,0,100,1,4));
-    let eyeType = int(map(s1, 0, 100, 1, 4));
-    let noseType = int(map(s4, 0, 100, 1, 4));
+    let mouthType = int(map(s2,0,100,1,5));
+    let eyeType = int(map(s1, 0, 100, 1, 5));
+    let noseType = int(map(s4, 0, 100, 1, 5));
     let earType = int(map(s5,0,100,1,4));
-    let extraType = int(map(s6,0,100,1,4));
+    let extraType = int(map(s6,0,100,1,5));
     AdamsVintageFellas(eyeType, mouthType, noseType, earType, extraType);
   }
 
