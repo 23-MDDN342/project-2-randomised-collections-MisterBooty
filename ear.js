@@ -56,7 +56,6 @@ function EAR(earType){
         noStroke()
         arc(-7, 0, 4, 6, 0.1,0,OPEN); // ear fill to hide face lines
 
-
         stroke(MustyBrown_const);
         strokeWeight(.4);
         arc(-6.5, 3, 2.5, 3, 6.2,3.5,OPEN); // ear lobe

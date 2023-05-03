@@ -53,19 +53,7 @@ fill(DarkBeige_const)
   arc(-1,-3.1, 14, 13,2.566 ,5); // head top
 
   fill(MustyBrown_const);
-  // ellipse(-9,9,0.5) //bottom left dot
-  // ellipse(9,9,0.5) //bottom right dot
-  // ellipse(-9,-9,0.5) //top left dot
-  // ellipse(9,-9,0.5) //top right dot
 
-
-  // ellipse(-8,8,0.5) //bottom left dot
-  // ellipse(8,8,0.5) //bottom right dot
-  // ellipse(-8,-8,0.5) //top left dot
-  // ellipse(8,-8,0.5) //top right dot
-
-
- 
    /********MOUTH*********/
    MOUTH(mouthType);
   
