@@ -11,6 +11,7 @@ function NOSE(noseType){
         stroke(MustyBrown_const);
         fill(LightBeige_const)
         strokeWeight(.4);
+        
         arc(2.5,1,3,3,4,3) // round ball nose
       
     }
@@ -19,6 +20,7 @@ function NOSE(noseType){
         stroke(MustyBrown_const);
         fill(LightBeige_const);
         strokeWeight(.4);
+
         rect(1,0.5,8.5,1.6,5,5,5) // nose bridge/ main
         line(7,0.3,8,-0.5) // stem 1 base
         line(7.3,0.1,7,-0.5) // stem one branch
@@ -34,6 +36,7 @@ function NOSE(noseType){
      stroke(MustyBrown_const);
         noFill()
         strokeWeight(.4);
+
         arc(3.3,-2,3,5,1.75,3.3) // nose bridge curve
         fill(LightBeige_const)
         arc(3.2,1.45,2.2,2.2,4.5,2,OPEN) // nose knob
@@ -44,7 +47,7 @@ function NOSE(noseType){
     
     
 else if (noseType == 4){ // pimple nose
-  stroke(MustyBrown_const);
+        stroke(MustyBrown_const);
         fill(LightBeige_const)
         strokeWeight(.4);
         

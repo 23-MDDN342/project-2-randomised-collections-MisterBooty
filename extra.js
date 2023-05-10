@@ -66,9 +66,6 @@ function EXTRAS(extraType){
         ellipse(5.5,-2,0.2,0.5) // middle right below eye
         ellipse(-5,3.5,0.2,0.5) // middle left below ear
         ellipse(-5,-4.5,0.2,0.5) // middle left below ear
-
-
-        
     }
 
     else if (extraType == 4){ // scars

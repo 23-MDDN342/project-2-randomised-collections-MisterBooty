@@ -76,7 +76,6 @@ else if (mouthType == 4){ // buck tooth mouth
 
     ellipse(1.5,5.5,4,4) //mouth dark
 
-
     fill(LightBeige_const);
     ellipse(1.5,6.65,3,1.5) //tongue
     line(1,6,1.5,6.5) // tongue dent

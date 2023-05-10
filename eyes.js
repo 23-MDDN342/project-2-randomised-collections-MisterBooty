@@ -45,7 +45,6 @@ function EYES(eyeType){
         triangle(-3.5,-3, -3.5,-.5,-0.5,-1.5,) // left eye indent
         triangle(1,-3, 1,-0.5,4,-1.5,) // right eye indent
         
-
         stroke(MustyBrown_const);
         fill(LightBeige_const); 
         strokeWeight(.4);
@@ -105,17 +104,12 @@ else if (eyeType == 2){ // dead eyes
      stroke(MustyBrown_const);
      fill(MustyBrown_const);
     
-   
-     
-
      line(-2,-3.5,0,-0.5) // left x line 1
      line(0,-3.5,-2,-0.5) // left x line 2
 
      line(2.5,-3.5,4.5,-0.5) // right x line 1
      line(4.5,-3.5,2.5,-0.5) // right x line 2
 
-     
-     
      noFill(); 
      arc(-1,-4,10,3,3.6,5) //left eyebrow raised
      arc(3.5,-4,10,3,4.5,5.75) //left eyebrow raised
